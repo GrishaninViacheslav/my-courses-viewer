@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">my-courses-viewer</string>
+    <string name="timer_title">Are you ready for exams?</string>
+    <string name="days_timer_title">Days</string>
+    <string name="hours_timer_title">Hours</string>
+</resources>

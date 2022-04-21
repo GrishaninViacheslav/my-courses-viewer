@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/timer_background"
+        android:layout_width="0dp"
+        android:layout_height="175dp"
+        android:background="@drawable/timer_background"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/timer_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/timer_title"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="@id/timer_background"
+        app:layout_constraintRight_toRightOf="@id/timer_background"
+        app:layout_constraintTop_toTopOf="@id/timer_background" />
+
+    <TextView
+        android:id="@+id/days_digit_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="2dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/timer_digit_background"
+        android:padding="15dp"
+        android:text="0"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintLeft_toLeftOf="@id/timer_background"
+        app:layout_constraintRight_toLeftOf="@id/days_digit_2"
+        app:layout_constraintTop_toBottomOf="@id/timer_title" />
+
+    <TextView
+        android:id="@+id/days_digit_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="2dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/timer_digit_background"
+        android:padding="15dp"
+        android:text="0"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@id/days_digit_1"
+        app:layout_constraintRight_toLeftOf="@id/days_hours_separator"
+        app:layout_constraintTop_toBottomOf="@id/timer_title" />
+
+    <ImageView
+        android:id="@+id/days_hours_separator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="4dp"
+        android:src="@drawable/timer_separator"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@id/days_digit_2"
+        app:layout_constraintLeft_toRightOf="@id/days_digit_2"
+        app:layout_constraintRight_toLeftOf="@id/hours_digit_1"
+        app:layout_constraintTop_toBottomOf="@id/timer_title"
+        app:layout_constraintTop_toTopOf="@id/days_digit_2" />
+
+    <TextView
+        android:id="@+id/hours_digit_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="2dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/timer_digit_background"
+        android:padding="15dp"
+        android:text="0"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@id/days_hours_separator"
+        app:layout_constraintRight_toLeftOf="@id/hours_digit_2"
+        app:layout_constraintTop_toBottomOf="@id/timer_title" />
+
+    <TextView
+        android:id="@+id/hours_digit_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="2dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/timer_digit_background"
+        android:padding="15dp"
+        android:text="0"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@id/hours_digit_1"
+        app:layout_constraintRight_toLeftOf="@id/hours_minutes_separator"
+        app:layout_constraintTop_toBottomOf="@id/timer_title" />
+
+    <ImageView
+        android:id="@+id/hours_minutes_separator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="4dp"
+        android:src="@drawable/timer_separator"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@id/days_digit_2"
+        app:layout_constraintLeft_toRightOf="@id/hours_digit_2"
+        app:layout_constraintRight_toLeftOf="@id/minutes_digit_1"
+        app:layout_constraintTop_toBottomOf="@id/timer_title"
+        app:layout_constraintTop_toTopOf="@id/days_digit_2" />
+
+    <TextView
+        android:id="@+id/minutes_digit_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="2dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/timer_digit_background"
+        android:padding="15dp"
+        android:text="0"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@id/hours_minutes_separator"
+        app:layout_constraintRight_toLeftOf="@id/minutes_digit_2"
+        app:layout_constraintTop_toBottomOf="@id/timer_title" />
+
+    <TextView
+        android:id="@+id/minutes_digit_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="2dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/timer_digit_background"
+        android:padding="15dp"
+        android:text="0"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@id/minutes_digit_1"
+        app:layout_constraintRight_toRightOf="@id/timer_background"
+        app:layout_constraintTop_toBottomOf="@id/timer_title" />
+
+    <TextView
+        android:id="@+id/days_time_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/days_timer_title"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        app:layout_constraintLeft_toLeftOf="@id/days_digit_1"
+        app:layout_constraintRight_toRightOf="@id/days_digit_2"
+        app:layout_constraintTop_toBottomOf="@id/days_digit_1" />
+
+    <TextView
+        android:id="@+id/hours_time_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/hours_timer_title"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        app:layout_constraintLeft_toLeftOf="@id/hours_digit_1"
+        app:layout_constraintRight_toRightOf="@id/hours_digit_2"
+        app:layout_constraintTop_toBottomOf="@id/hours_digit_1" />
+
+    <TextView
+        android:id="@+id/minutes_time_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/hours_timer_title"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        app:layout_constraintLeft_toLeftOf="@id/minutes_digit_1"
+        app:layout_constraintRight_toRightOf="@id/minutes_digit_2"
+        app:layout_constraintTop_toBottomOf="@id/minutes_digit_1" />
+</androidx.constraintlayout.widget.ConstraintLayout>
