@@ -3,4 +3,6 @@
     <string name="timer_title">Are you ready for exams?</string>
     <string name="days_timer_title">Days</string>
     <string name="hours_timer_title">Hours</string>
+    <string name="classes_title">Classes</string>
+    <string name="homework_title">Homework</string>
 </resources>
